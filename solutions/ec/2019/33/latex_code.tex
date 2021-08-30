@@ -1,0 +1,42 @@
+From the given information, 
+\begin{equation}
+    \myvec{\dot{x}(t)\\y(t)} = \myvec{A & B\\C & d}\myvec{x(t)\\u(t)}
+\end{equation}
+%    
+Taking Laplace transform on both sides,
+\begin{align}
+    \myvec{sX(s)\\Y(s)} &= \myvec{A & B\\ C & d}\myvec{X(s)\\U(s)}\\
+    \implies sX(s) &= AX(s)+BU(s)\\
+    \implies X(s) &= (sI-A)^{-1} BU(s)\\
+    \implies Y(s) &= CX(s)+dU(s)\\ 
+                  &= C(sI-A)^{-1} BU(s) +dU(s)
+\end{align}
+
+By definition, 
+\begin{align}
+    Y(s) &= H(s)U(s)\\
+    \implies H(s) &= C(sI-A)^{-1} B + d\\
+                  &= \dfrac{1}{s^3+3s^2+2s+1}
+\end{align} 
+\begin{equation}
+    \implies C(sI-A)^{-1} B + d = \dfrac{1}{s^3+3s^2+2s+1}\label{ec/2019/33result}
+\end{equation}
+
+Now we cross verify the options with eq \ref{ec/2019/33result}. By using a python script, 
+\begin{enumerate}[label = (\Alph*)]
+    \item \begin{equation}
+        C(sI-A)^{-1} B +d = \dfrac{1}{s^3+3s^2+2s+1}
+    \end{equation}
+    \item \begin{equation}
+        C(sI-A)^{-1} B +d = \dfrac{1}{s^3+1s^2+2s+3}
+    \end{equation}    
+    \item \begin{equation}
+        C(sI-A)^{-1} B +d = \dfrac{s^2}{s^3+3s^2+2s+1}
+    \end{equation}
+    \item \begin{equation}
+        C(sI-A)^{-1} B +d = \dfrac{s^2}{s^3+1s^2+2s+3}
+    \end{equation}
+\end{enumerate}
+
+Hence  A is the correct option.
+
