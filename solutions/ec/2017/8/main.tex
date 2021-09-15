@@ -1,0 +1,334 @@
+
+\begin{definition}
+We say that a system is\textbf{ linear} if and only if it follows the Principle of Superposition, i.e Law of Additivity and Law of Homogeneity.
+\label{ec/2017/8/L}
+\end{definition}
+\begin{definition}
+A system is said to be \textbf{time invariant} if the output signal does not depend on the absolute time, i.e a time delay on the input signal directly equates to the delay in the output signal.
+\label{ec/2017/8/T}
+\end{definition}
+\begin{lemma}
+The system relating the input signal $x(t$) and output signal $y(t)$, given by 
+\begin{align}
+     y(t) = \int_{t-T}^tx(u)\,du
+\end{align}
+is linear and time invariant in nature.
+\end{lemma}
+\begin{proof}
+\begin{enumerate}
+\item \textbf{\underline{Linearity and Time invariance}}\\
+From \eqref{ec/2017/8/L}, we can say the system is linear if it follows both the laws of Additivity and Homogeneity.\\
+\underline{Law of Additivity:}\\
+Let the two input signals be $x_1(t)$ and $x_2(t)$, and their corresponding output signals be $y_1(t)$ and $y_2(t)$, then:
+\begin{align}
+    y_1(t) = \int_{t-T}^tx_1(u)\,du\\
+    y_2(t) = \int_{t-T}^tx_2(u)\,du\\
+    y_1(t) + y_2(t) = \int_{t-T}^t[x_1(u) + x_2(u)]\,du
+    \label{ec/2017/8/1}
+\end{align}
+Now, consider the input signal of $x_1(t) + x_2(t)$, then the corresponding output signal is given by $y'(t)$:
+\begin{align}
+    y'(t) = \int_{t-T}^t[x_1(u) + x_2(u)]\,du
+    \label{ec/2017/8/2}
+\end{align}
+Clearly, from \eqref{ec/2017/8/1} and \eqref{ec/2017/8/2}:
+\begin{align}
+    y'(t) = y_1(t) + y_2(t)
+\end{align}
+Thus, the Law of Additivity holds.\\
+
+\underline{Law of Homogeneity: }\\
+Consider an input signal $kx(t)$, where $k$ is any constant. Let the corresponding output be given by $y'(t)$, then:
+\begin{align}
+    y'(t) = \int_{t-T}^t kx(u)\,du\\
+    = k\int_{t-T}^t x(u)\,du\\
+     = ky(t)
+     \label{ec/2017/8/3}
+\end{align}
+Clearly, from \eqref{ec/2017/8/3},
+\begin{align}
+    y'(t) = ky(t)
+\end{align}
+Thus, the Law of Homogeneity holds.\\
+
+Since both the Laws hold, the system satisfies the Principle of Superposition, and is thus, a \textbf{linear system}.\\
+
+From \eqref{ec/2017/8/T} , to check for time-invariance, we would introduce a delay of $t_0$ in the output and input signals.\\
+Delay in output signal:
+\begin{align}
+    y(t-t_0) = \int_{t-t_0-T}^{t-t_0} x(u)\,du
+    \label{ec/2017/8/4}
+\end{align}
+Now, we consider an input signal with a delay of $t_0$, given by $x(t-t_0)$, and let the corresponding output signal be given by $y'(t)$, then:
+\begin{align}
+    y'(t) = \int_{t-T}^{t} x(u-t_0)\,du
+\end{align}
+Substituting $a = u-t_0$:
+\begin{align}
+    y'(t) = \int_{t-t_0-T}^{t-t_0} x(a)\,da
+    \label{ec/2017/8/5}
+\end{align}
+Clearly, from \eqref{ec/2017/8/4} and \eqref{ec/2017/8/5}:
+\begin{align}
+    y'(t) = y(t-t_0)
+\end{align}
+Thus, the system is \textbf{time-invariant}.\\
+The correct option is \textbf{2) Linear and Time-invariant}\\
+
+
+\begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/input_signals.png}
+ \caption{$x_1(t) = \sin{t}$ and $x_2(t) = t$}
+ \end{figure}
+\begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/output_signals.png}
+ \caption{$y_1(t)$ and  $y_2(t)$}
+ \end{figure}
+ \begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/law_of_additivity.png}
+ \caption{Law of Additivity}
+ \end{figure}
+ \begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/law_of_homogeneity.png}
+
+ \caption{Law of Homogeneity}
+ \end{figure}
+  \begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/time_invariance.png}
+ \caption{Time invariance}
+ \end{figure}
+
+\item \textbf{\underline{Calculating impulse response of LTI system}}\\
+Since the given system is an LTI system, it would possess an impulse response $h(t)$, which is the output of the system when the input signal is the Impulse function, given by $\delta(t)$. Thus,
+\begin{align}
+    h(t) = \int_{t-T}^{t} \delta(u)du
+\end{align}\\
+\\
+The Impulse function can be loosely defined as:
+\begin{align}
+    \delta(t) = 
+    \begin{cases}
+\infty & t = 0\\
+0 & otherwise
+\end{cases}
+and \int_{-\infty}^\infty \delta(t)dt  = 1
+\end{align}
+Since the Impulse function is zero everywhere aside from $t = 0$ , the non-zero value of integration is a result of $\delta(0)$. Thus, we can say $h(t)$ will be non-zero only if the limits of integration would include $t=0$, i.e:
+\begin{align}
+    h(t) = 
+    \begin{cases}
+    \int_{t-T}^{t} \delta(u)du & t-T<0 ; t>0\\
+    0 & otherwise
+    \end{cases}
+    \end{align}
+    \begin{align}
+h(t) = 
+    \begin{cases}
+    1 & 0<t<T\\
+    0 & otherwise
+    \end{cases}
+    \label{ec/2017/8/H}
+\end{align}
+\item \textbf{\underline{Expressing the impulse function in terms of $u(t)$}} \\
+The unit step signal, $u(t)$, is given by:
+\begin{align}
+    u(t) = 
+    \begin{cases}
+    1 & t\geq0\\
+    0 & otherwise
+    \end{cases}
+    \label{ec/2017/8/u(t)}
+\end{align}
+On time-shifting $u(t)$ by T, we get:
+\begin{align}
+     u(t - T) = 
+    \begin{cases}
+    1 & t-T\geq 0\\
+    0 & otherwise
+    \end{cases}
+    = 
+    \begin{cases}
+    1 & t\geq T\\
+    0 & otherwise
+    \end{cases}
+    \label{ec/2017/8/u(t-T)}
+\end{align}
+On subtracting \eqref{ec/2017/8/u(t)} and \eqref{ec/2017/8/u(t-T)}, we get our impulse response $h(t)$ in terms of the unit step signal:
+\begin{align}
+    h(t) = u(t) - u(t-T)
+\end{align}
+\item \textbf{\underline{Expressing the impulse function in terms of $rect(t)$}}\\
+The unit rectangular signal, $rect(t)$ is given by:
+\begin{align}
+    rect(t) = 
+    \begin{cases}
+    1 & \frac{-1}{2} \leq t \leq \frac{1}{2} \\
+    0 & otherwise
+    \end{cases}
+    \label{ec/2017/8/rect}
+\end{align}
+We can obtain the impulse response $h(t)$ in terms of $rect(t)$ using time scaling and shifting as follows:
+\begin{align}
+    rect\brak{\frac{t}{\tau}} = 
+    \begin{cases}
+    1 & \frac{-1}{2} \leq \frac{t}{\tau} \leq  \frac{1}{2}\\
+    0 & otherwise
+    \end{cases}
+     = 
+     \begin{cases}
+     1 & \frac{-\tau}{2} \leq t \leq  \frac{\tau}{2}\\
+    0 & otherwise
+     \end{cases}
+    \end{align}
+    Subsituting $\tau = T$:
+    \begin{align}
+    rect\brak{\frac{t}{T}} = 
+    \begin{cases}
+    1 & \frac{-T}{2} \leq t \leq \frac{T}{2}\\
+    0 & otherwise
+    \end{cases}
+    \end{align}
+    Now, we want to right-shift the signal by $\frac{T}{2}$:
+    \begin{align}
+    rect\brak{\frac{1}{T}\brak{t - \frac{T}{2}}} = 
+    \begin{cases}
+    1 &  0 \leq t \leq T\\
+    0 & otherwise
+    \end{cases}
+     = h(t)
+\end{align}
+Since the time shifting is to be performed on the variable $t$ and not $\frac{t}{T}$\\
+
+\item 
+\textbf{\underline{Calculating the Fourier Transform of $h(t)$}}\\
+Let the Fourier Transform of $h(t)$ be given by $H(f)$ and of the rectangular signal, $rect(t)$ be given by $Y(f)$.
+\begin{align}
+    h(t) \fourier H(f)\\
+    rect(t) \fourier Y(f)
+    \end{align}
+    Then,
+    \begin{align}
+    Y(f) = \int_{-\infty}^\infty rect(t)e^{-j2\pi f t}\,dt
+    \label{ec/2017/8/Fourier}
+\end{align}
+From \eqref{ec/2017/8/rect}, we can write \eqref{ec/2017/8/Fourier} as:
+\small{
+\begin{align}
+   Y(f) = \int_{-\infty}^\frac{-1}{2} 0\,dt + \int_{\frac{-1}{2}}^\frac{1}{2} e^{-j2\pi ft}\,dt + \int_\frac{1}{2}^\infty 0\,dt\\
+    = \frac{e^{j\pi f} - e^{-j \pi f}}{j2\pi f}\\
+     = \frac{2j\sin{\pi f}}{j2\pi f}\\
+      = \frac{\sin (\pi f)}{\pi f}\\
+       = sinc(f)
+\end{align}
+}
+where $sinc(t)$, the sampling function is defined as:
+\begin{align}
+    sinc(t) = 
+    \begin{cases}
+    1 & t = 0\\
+    \frac{\sin(\pi t)}{\pi t} & otherwise
+    \end{cases}
+\end{align}
+Let the Fourier Transform of a signal $x(t)$ be $X(f)$.
+\begin{align}
+    x(t) \fourier X(f)
+\end{align}
+When the signal $x(t)$ is time shifted by $t_0$, the resultant Fourier Transform is given by:
+\begin{align}
+    x(t \pm t_0) \fourier X(f)e^{\pm j2\pi ft_0}
+    \label{ec/2017/8/shift}
+\end{align}
+And when the signal $x(t)$ is time scaled by $\alpha$, the resulting Fourier Transform is given by:
+\begin{align}
+    x(\alpha t) \fourier \frac{1}{\abs{\alpha}}X\brak{\frac{f}{\alpha}}
+    \label{ec/2017/8/scale}
+\end{align}
+Since we have already derived the Fourier Transform of $rect(t)$, we would use the properties mentioned above to find the Fourier Transform of $h(t)$:
+\begin{align}
+    rect(t) \fourier sinc( f)
+\end{align}
+Using \eqref{ec/2017/8/shift}:
+\begin{align}
+    rect\brak{t - \frac{T}{2}} \fourier sinc( f)e^{-j(2 \pi f)\frac{T}{2}}\\
+    rect\brak{t - \frac{T}{2}} \fourier sinc( f)e^{-j \pi f T}
+\end{align}
+Using \eqref{ec/2017/8/scale},
+\begin{align}
+    rect\brak{\frac{1}{T}\brak{t - \frac{T}{2}}} \fourier \frac{1}{\frac{1}{\abs{T}}}sinc\brak{\frac{ f }{T}}e^{\frac{-j \pi f T}{T}}\\
+    h(t) \fourier Tsinc\brak{\frac{ f }{T}}e^{-j\pi f}\\
+    \therefore H(f)  = Tsinc\brak{\frac{ f }{T}}e^{-j\pi f}
+\end{align}\\
+
+
+\item \textbf{\underline{An example}}\\
+Consider an input signal of $x(t) = \cos{2\pi f_0t}$. The Fourier Transform of $x(t)$ is given by:
+\begin{align}
+    x(t) = \cos{2\pi f_0t} \fourier \frac{1}{2}\sbrak{\delta(f - f_0) + \delta(f + f_0)}
+\end{align}
+using the fact that 
+\begin{align}
+    \cos{2\pi f_0 t} = \frac{e^{j2\pi f_0 t} + e^{-j2\pi f_0 t}}{2}
+\end{align} and the Fourier Transform of $e^{\pm j2\pi f_0 t}$ is given by:
+\begin{align}
+    e^{\pm j2\pi  f_0 t} \fourier \delta(f \mp f_0)
+    \label{ec/2017/8/FT}
+\end{align}
+The output signal will be given by:
+\begin{align}
+    y(t) = \int_{t-T}^t \cos{2\pi f_0u}\,du\\
+     = \frac{1}{2\pi f_0}\sbrak{\sin{2\pi f_0t}- \sin2\pi f_0({t-T})}\\
+      = \frac{\sin\pi f_0 T}{\pi f_0} \sbrak{\cos2\pi f_0 \brak{t - \frac{T}{2}}}\\
+      = Tsinc(f_0 T)\cos2\pi f_0\brak{t - \frac{T}{2}}
+      \label{ec/2017/8/output}
+\end{align}
+The Fourier transform of $\cos2\pi f_0\brak{t - \frac{T}{2}}$ can be obtained using \eqref{ec/2017/8/scale} and \eqref{ec/2017/8/shift} as follows:
+\small{
+\begin{align}
+    \cos t = \frac{1}{2}\sbrak{e^{jt} + e^{-jt}}\\
+    \cos t \fourier \frac{1}{2}\sbrak{\delta\brak{f - \frac{1}{2\pi}} + \delta\brak{f + \frac{1}{2\pi}}}\\
+    \cos\brak{t - \frac{T}{2}} \fourier \frac{e^{j\pi fT}}{2}\sbrak{\delta\brak{f - \frac{1}{2\pi}} + \delta\brak{f + \frac{1}{2\pi}}} \\
+    \cos2\pi f_0\brak{t - \frac{T}{2}} \fourier \frac{e^{j\pi \frac{f}{2\pi f_0}T}}{2\pi f_0}\frac{\delta(\frac{f}{2\pi f_0} - \frac{1}{2\pi}) + \delta(\frac{f}{2\pi f_0} + \frac{1}{2\pi})}{2} \\
+    \cos 2\pi f_0\brak{t - \frac{T}{2}} \fourier\frac{e^{j\pi \frac{f}{2f_0}T}}{4\pi f_0}\brak{\delta\brak{\frac{f - f_0}{2\pi f_0}} + \delta\brak{\frac{f + f_0}{2\pi f_0}}}
+\end{align}
+}
+Therefore, the Fourier Transform of the output signal $y(t)$ from \eqref{ec/2017/8/output} is given by:
+ \begin{align}
+     y(t) \fourier \frac{Tsinc( f_0 T)}{4\pi f_0}e^{j\pi \frac{f}{2f_0}T}\brak{\delta\brak{\frac{f - f_0}{2\pi f_0}} + \delta\brak{\frac{f + f_0}{2\pi f_0}}}\\
+     y(t) \fourier ke^{j\pi \frac{f}{2f_0}T}\brak{\delta\brak{\frac{f - f_0}{2\pi f_0}} + \delta\brak{\frac{f + f_0}{2\pi f_0}}}
+ \end{align}
+ where $k = \frac{Tsinc( f_0T)}{4\pi f_0}$. Substituting $2\pi f_0 = 1$ and $T = 1$:
+ \begin{align}
+     y(t) \fourier ke^{j\pi^2f}\brak{\delta\brak{f - \frac{1}{2\pi}} + \delta\brak{f + \frac{1}{2\pi}}}\\
+     y(t) \fourier ke^{j\frac{\pi}{2}}\delta\brak{f - \frac{1}{2\pi}} +ke^{j\frac{-\pi}{2}}\delta\brak{f + \frac{1}{2\pi}}
+ \end{align}
+ using the multiplication property of the Delta function:
+ \begin{align}
+     x(t)\delta(t - t_1) = x(t_1)\delta(t - t_1)
+ \end{align}
+ Since , $e^{j\frac{\pi}{2}} = j$ and $e^{-j\frac{\pi}{2}} = -j$, we finally get:
+ \begin{align}
+ y(t) \fourier kj\sbrak{\delta\brak{f - \frac{1}{2\pi}} - \delta\brak{f + \frac{1}{2\pi}}}
+ \end{align}
+ Clearly, the Fourier transform of $y(t)$ can be manipulated to represent a  sinusoidal wave, which is given by:
+ \begin{align}
+     sin(t) \fourier \frac{-j}{2}\sbrak{\delta\brak{f-\frac{1}{2\pi}} - \delta\brak{f + \frac{1}{2\pi}}}
+ \end{align}
+The attenuation happens for the same values of $f$, as depicted in the graphs of the Fourier Transforms given below.
+\begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/fourier_impulse_response.png}
+ \caption{Fourier Transform of Impulse response $h(t)$}
+ \end{figure}
+ \begin{figure}[!ht]
+\centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2017/8/graphs/fourier_impulse_response_zoomed.png}
+ \caption{Fourier Transform of Impulse response $h(t)$ zoomed in}
+ \end{figure}
+
+\end{enumerate}
+\end{proof}

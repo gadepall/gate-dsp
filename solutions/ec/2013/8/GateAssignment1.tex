@@ -1,0 +1,160 @@
+%
+\begin{definition}[Laplace Transform]
+It is an integral transform that converts a function of a real variable $t$ to a function of a complex variable $s$. The Laplace transform of $f(t)$ is denoted by $\mathcal{L}\cbrak{f(t)}$ or $F(s)$.
+\begin{align}
+    F(s)=\mathcal{L}\cbrak{f(t)}=\int_{0}^{\infty}e^{-st}f(t)dt
+\end{align}
+\end{definition}
+\begin{remark}
+Laplace transform of $f(t)=t^n,n\geq1$ is
+\begin{align}
+    F(s)=\mathcal{L}\cbrak{t^n}=\dfrac{n!}{s^{n+1}},s>0
+    \label{ec/2013/8eq:t}
+\end{align}
+\end{remark}
+\begin{proof}
+Basis Step: $n=1$
+\begin{align}
+    \mathcal{L}\cbrak{t}&=\int_{0}^{\infty}e^{-st}tdt\\
+    &=\sbrak{\dfrac{te^{-st}}{-s}}_{0}^{\infty}+\dfrac{1}{s}\int_{0}^{\infty}e^{-st}dt\\
+    &=0+\sbrak{\dfrac{-1}{s^2}e^{-st}}_{0}^{\infty},s>0\\
+    &=\dfrac{1}{s^2},s>0
+\end{align}
+Inductive Step:
+\begin{align}
+    \mathcal{L}\cbrak{t^n}&=\int_{0}^{\infty}e^{-st}t^ndt\\
+    &=\sbrak{\dfrac{t^{n}e^{-st}}{-s}}_{0}^{\infty}+\dfrac{n}{s}\int_{0}^{\infty}t^{n-1}e^{-st}dt\\
+    &=0+\dfrac{n}{s}\mathcal{L}\cbrak{t^{n-1}},s>0\\
+    &=\dfrac{n}{s}\mathcal{L}\cbrak{t^{n-1}},s>0\label{ec/2013/8eq:e}
+\end{align}
+To prove that if \\eqref{ec/2003/8eq:t} holds for $n=k$, it holds for $n=k+1$. From \\eqref{ec/2003/8eq:e}
+\begin{align}
+    \mathcal{L}\cbrak{t^{k+1}}&=\dfrac{k+1}{s}\mathcal{L}\cbrak{t^{k}}\\
+    &=\dfrac{(k+1)k!}{s(s^{k+1})}=\dfrac{(k+1)!}{s^{k+2}},s>0
+\end{align}
+By mathematical induction, \\eqref{ec/2003/8eq:t} is true $\forall n\geq 1$
+\end{proof}
+\begin{lemma}
+For any real number c, 
+\begin{align}
+    \mathcal{L}\cbrak{u(t-c)}=\dfrac{e^{-cs}}{s}, s>0
+    \label{ec/2013/8eq:u}
+\end{align}
+\end{lemma}
+\begin{proof}
+ \begin{align}
+     \mathcal{L}\cbrak{u(t-c)}&=\int_{0}^{\infty}e^{-st}u(t-c)dt=\int_{c}^{\infty}e^{-st}dt\\
+     &=\sbrak{-\dfrac{e^{-st}}{s}}_{c}^{\infty}=\dfrac{e^{-cs}}{s}, s>0
+ \end{align}
+\end{proof}
+\begin{definition}[Inverse Laplace Transform]
+It is the transformation of a Laplace transform into a function of time. If $F(s)=\mathcal{L}\cbrak{f(t)}$, then the Inverse laplace transform of $F(s)$ is $\mathcal{L}^{-1}\cbrak{F(s)}=f(t)$.
+\end{definition}
+\begin{lemma}[t-shift rule]
+For any real number c,
+\begin{align}
+    \mathcal{L}\cbrak{u(t-c)f(t-c)}=e^{-cs}F(s)
+    \label{ec/2013/8eq:uf}
+\end{align}
+\end{lemma}
+\begin{proof}
+\begin{align}
+    \mathcal{L}\cbrak{u(t-c)f(t-c)}&=\int_{0}^{\infty}e^{-st}u(t-c)f(t-c)dt\\
+    &=\int_{c}^{\infty}e^{-st}f(t-c)dt\\
+    &=\int_{0}^{\infty}e^{-s(\tau+c)}f(\tau)d\tau \brak{t=\tau+c}\\
+    &=e^{-cs}\int_{0}^{\infty}e^{-s\tau}f(\tau)d\tau\\
+    &=e^{-cs}F(s)
+\end{align}
+\end{proof}
+\begin{corollary}
+\begin{align}
+    \mathcal{L}^{-1}\cbrak{e^{-cs}F(s)}=u(t-c)f(t-c)
+\end{align}
+\end{corollary}
+\begin{theorem}[Convolution theorem]
+Suppose $F(s)=\mathcal{L}\cbrak{f(t)}, G(s)=\mathcal{L}\cbrak{g(t)}$ exist, then,
+\begin{align}
+    \mathcal{L}^{-1}\cbrak{F(s)G(s)}=f(t)*g(t)\label{ec/2013/8eq:cuf}
+\end{align}
+\end{theorem}
+Given,
+\begin{align}
+    &h(t)=tu(t)\\
+    &x(t)=u(t-1)
+\end{align}
+To find: $y(t)$. We know, 
+\begin{align}
+y(t)&=h(t)*x(t)\\
+&=\mathcal{L}^{-1}\cbrak{H(s)X(s)}
+\label{ec/2013/8eq:def}
+\end{align}
+From \\eqref{ec/2003/8eq:uf} and \\eqref{ec/2003/8eq:t}, 
+\begin{align}
+H(s)=e^{0}\mathcal{L}\cbrak{t}=\dfrac{1}{s^2}
+\end{align}
+From \\eqref{ec/2003/8eq:u}, 
+\begin{align}
+X(s)=\dfrac{e^{-s}}{s}
+\end{align}
+Substituting in \\eqref{ec/2003/8eq:def},
+\begin{align}
+y(t)=\mathcal{L}^{-1}\cbrak{\dfrac{e^{-s}}{s^3}}
+% &\therefore y(t)=\begin{cases}
+% 	\dfrac{(t-1)^{2}}{2}, & t \geq 1 \\~\\[-1em]
+% 	0, & t < 1
+% 	\end{cases}\\ 
+% &\therefore y(t)=\dfrac{(t-1)^{2}}{2}u(t-1)
+\end{align}
+Consider 
+\begin{align}
+    p(t)=\dfrac{t^{2}}{2}
+\end{align}
+From \\eqref{ec/2003/8eq:t}
+\begin{align}
+    P(s)=\dfrac{2!}{2s^3}=\dfrac{1}{s^3}
+\end{align}
+Further, from \\eqref{ec/2003/8eq:cuf}, for $c=1$
+\begin{align}
+    \mathcal{L}^{-1}\cbrak{e^{-s}P(s)}&=u(t-1)p(t-1)\\
+    &=u(t-1)\dfrac{(t-1)^2}{2}\\
+    \therefore y(t)&=\dfrac{(t-1)^2}{2}u(t-1)
+\end{align}
+Option 3 is the correct answer.
+\begin{align}
+    h(t)&=\begin{cases}
+	t, & t \geq 0 \\~\\[-1em]
+	0, & t <0
+	\end{cases}\\
+	x(t)&=\begin{cases}
+	1, & t \geq 1 \\~\\[-1em]
+	0, & t <1
+	\end{cases}\\
+	y(t)&=\begin{cases}
+	\dfrac{(t-1)^2}{2}, & t \geq 1 \\~\\[-1em]
+	0, & t <1
+	\end{cases}
+\end{align}
+See Figs. \ref{ec/2013/8plot1}, \ref{ec/2013/8plot2} and \ref{ec/2013/8plot3}.
+%
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2013/8/figures/GateAssignment1(1).png}
+ \caption{Plot of $x(t)$}
+ \label{ec/2013/8plot1}
+\end{figure}
+
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2013/8/figures/GateAssignment1(2).png}
+ \caption{Plot of $h(t)$}
+ \label{ec/2013/8plot2}
+\end{figure}
+
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=\columnwidth]{solutions/ec/2013/8/figures/GateAssignment1(3).png}
+ \caption{Plot of $y(t)$}
+ \label{ec/2013/8plot3}
+\end{figure}
+
+

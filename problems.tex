@@ -6,6 +6,31 @@
 \numberwithin{table}{enumi}
 \numberwithin{lemma}{enumi}
 
+\item The impulse response of a system is $h(t)=tu(t)$. For an input $u(t-1)$, the output is 
+\begin{enumerate}
+    \item $\dfrac{t^{2}}{2}u(t)$
+    \item $\dfrac{t(t-1)}{2}u(t-1)$
+    \item $\dfrac{(t-1)^{2}}{2}u(t-1)$
+    \item $\dfrac{t^{2}-1}{2}u(t-1)$
+\end{enumerate}
+\solution
+\input{solutions/ec/2013/8/GateAssignment1.tex}
+%
+\item The input $x(t)$ and output $y(t)$ of a continous time signal are related as
+\begin{align}
+    y(t) = \int_{t-T}^tx(u)\,du
+\end{align}
+The system is:
+\begin{enumerate}
+    \item Linear and Time-variant
+    \item Linear and Time-invariant
+    \item Non-Linear and Time-variant
+    \item Non-Linear and Time-invariant
+\end{enumerate}
+\solution
+\input{solutions/ec/2017/8/main.tex}
+
+
 \item Let the state-space representation on an LTI system be $\dot{x}(t) = Ax(t)+Bu(t)$, $y(t)=Cx(t)+du(t)$ where A,B,C are matrices,  d is a scalar, u(t) is the input to the system, and y(t) is its output. Let $B = \myvec{ 0 & 0 &  1}^\top$ and $d = 0$. Which one of the following options for A and C will ensure that the transfer function of this LTI system is 
 \begin{equation}
     H(s) = \dfrac{1}{s^3+3s^2+2s+1}
