@@ -6,6 +6,20 @@
 \numberwithin{table}{enumi}
 \numberwithin{lemma}{enumi}
 
+\item A continuous time LTI system is described by
+\begin{align}
+    \frac{d^2y(t)}{dt^2}+4\frac{dy(t)}{dt}+3y(t) = 2\frac{dx(t)}{dt}+4x(t)\label{ec/2010/41/q}
+\end{align}
+Assuming zero initial conditions, the response $y\brak{t}$ of the above system for the input $x\brak{t}=e^{-2t}u\brak{t}$ is given by
+\begin{enumerate}
+    \item $\brak{e^t-e^{3t}}u\brak{t}$
+    \item $\brak{e^{-t}-e^{-3t}}u\brak{t}$
+    \item $\brak{e^{-t}+e^{-3t}}u\brak{t}$
+    \item $\brak{e^{t}+e^{3t}}u\brak{t}$
+\end{enumerate}
+\solution
+\input{solutions/ec/2010/41/Gate2.tex}
+
 \item The impulse response of a system is $h(t)=tu(t)$. For an input $u(t-1)$, the output is 
 \begin{enumerate}
     \item $\dfrac{t^{2}}{2}u(t)$
@@ -16,6 +30,20 @@
 \solution
 \input{solutions/ec/2013/8/GateAssignment1.tex}
 %
+\item The DFT of a vector $\myvec{a & b & c & d}$ is the vector $\myvec{\alpha & \beta & \gamma & \delta}$. Consider the product 
+\begin{equation}
+    \myvec{p & q & r & s} = \myvec{a & b & c & d}\myvec{a & b & c & d\\ d & a & b & c\\ c & d & a & b\\b & c & d &a}
+\end{equation}
+The DFT of the vector $\myvec{p & q & r & s}$ is a scaled version of 
+\begin{enumerate}[label = (\Alph*)]
+    \item $\myvec{\alpha^2 & \beta ^2 & \gamma^2 & \delta^2}$
+    \item $\myvec{\sqrt{\alpha} & \sqrt{\beta} & \sqrt{\gamma} & \sqrt{\delta}}$
+    \item $\myvec{\alpha+\beta & \beta+\delta & \delta+\gamma & \gamma+\alpha}$
+    \item $\myvec{\alpha & \beta & \gamma & \delta}$
+\end{enumerate}
+\solution
+\input{solutions/ec/2013/39/latex_code.tex}
+
 \item The input $x(t)$ and output $y(t)$ of a continous time signal are related as
 \begin{align}
     y(t) = \int_{t-T}^tx(u)\,du

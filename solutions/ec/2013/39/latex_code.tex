@@ -1,0 +1,71 @@
+%
+\begin{lemma}
+Let     
+\begin{align}
+    \vec{T} = \myvec{a & d & c & b\\ b & a & d & c\\ c & b & a & d\\d & c & b & a}
+\end{align}
+Then, for 
+\begin{align}
+    \myvec{\alpha \\ \beta \\ \gamma \\ \delta} = \vec{W}  \myvec{a \\ b \\ c \\ d},
+\end{align}
+where $\vec{W}$ is the DFT matrix,
+%
+\begin{align}
+    \vec{T} = \vec{W}&\myvec{\alpha & 0 & 0 & 0\\ 0 & \beta & 0 & 0\\ 0 & 0 & \gamma & 0\\ 0 & 0 & 0 & \delta} \vec{W}^{-1}
+    \label{2019/33/spectrum}
+\end{align}
+
+% If $\vec{T}$ is a circulant matrix, then the eigenvector matrix of $\vec{T}$ is the same as the DFT matrix $\vec{W}$ and the eigenvalues are the DFT of the first column of $\vec{T}$.
+ \end{lemma}
+
+% \begin{proof}
+% The $i^{th}$ column of the $n\times n$ DFT matrix is given by
+% \begin{align}
+%     p_i = \dfrac{1}{\sqrt{n}}\myvec{1 \\ \omega^{i} \\ \omega^{2i} \\ : \\ : \\ \omega^{(n-1)i}} 
+% \end{align}
+% where $\omega$ is the $n^{th}$ root of 1. We shall show that this $p_i$ is the eigenvector of $\vec{T}$. Observe that the k$^{th}$ component of $\vec{T}\vec{p}_i$ is given by
+
+% \begin{align}
+%     y_k &= \dfrac{1}{\sqrt{n}}\sum_{j = 0}^{n-1}\vec{T}_{kj} \omega^{ij}\\ 
+%     &= \dfrac{\omega^{ki}}{\sqrt{n}}\sum_{j = 0}^{n-1}\vec{T}_{kj}\omega^{(j-k)i}\\
+%     &= \dfrac{\omega^{ki}}{\sqrt{n}}\sum_{j = 0}^{n-1}\vec{T}_{(j-k)mod(n)1}\omega^{(j-k)i}\\
+%     &= \dfrac{\omega^{ki}}{\sqrt{n}}\sum_{m = 0}^{n-1}\vec{T}_{m1}\omega^{mi}
+% \end{align}
+
+% Therefore 
+% \begin{align}
+%     \vec{T}\vec{p}_i = \dfrac{\sum_{m = 0}^{n-1}\vec{T}_{m1}\omega^{mi}}{\sqrt{n}}\myvec{1 \\ \omega^{i} \\ \omega^{2i} \\ : \\ : \\ \omega^{(n-1)i}}
+% \end{align}
+
+% But $\sum_{m = 0}^{n-1}\vec{T}_{m1}\omega^{mi}$ is nothing but the i$^{th}$ element of the DFT of the first column of $\vec{T}$. Therefore $\vec{p}_i$ is an eigenvector of $\vec{T}$ with eigenvalue as i$^{th}$ element of the DFT of the first column of $\vec{T}$.
+% \end{proof}
+% 
+% Now we start with the solution. First we express the equations in a more convenient form.
+Let
+\begin{align}
+\; \vec{x} = &\myvec{a \\ b \\ c \\ d};\; \vec{X} = \myvec{\alpha \\ \beta \\ \gamma \\ \delta} = \vec{W}\vec{x};\; \vec{y} = \myvec{p \\ q \\ r \\ s}
+\label{2019/33/dft}
+%    &\vec{T} = \myvec{a & d & c & b\\ b & a & d & c\\ c & b & a & d\\d & c & b & a}
+\end{align}
+%
+%From the given information, 
+% \begin{align}
+%     % \myvec{p & q & r & s} &= \myvec{a & b & c & d}\myvec{a & b & c & d\\ d & a & b & c\\ c & d & a & b\\b & c & d & a}\\
+% \myvec{p & q & r & s}^\top &= \myvec{a & b & c & d\\ d & a & b & c\\ c & d & a & b\\b & c & d & a}^\top \myvec{a & b & c & d}^\top
+% \end{align}
+% \begin{align}
+%  \myvec{p \\ q \\ r \\ s} = \myvec{T}\myvec{a \\ b \\ c \\ d}
+%  end{align}
+%
+Then 
+\begin{align}
+    \vec{Y} &= \vec{W}\vec{y} = \vec{W}\vec{T}\vec{x}
+    \\
+    &=\vec{W}\vec{T}\vec{W}^{-1}\vec{X} 
+    \\
+    &= \myvec{\alpha & 0 & 0 & 0\\ 0 & \beta & 0 & 0\\ 0 & 0 & \gamma & 0\\ 0 & 0 & 0 & \delta}\myvec{\alpha \\ \beta \\ \gamma \\ \delta}
+    \\
+    &= \myvec{\alpha^2 \\ \beta^2 \\ \gamma^2\\ \delta^2}
+\end{align}
+upon substituting from \eqref{2019/33/spectrum} and \eqref{2019/33/dft}.
+Therefore option (A) is the correct option.
