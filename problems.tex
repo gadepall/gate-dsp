@@ -20,6 +20,23 @@ Assuming zero initial conditions, the response $y\brak{t}$ of the above system f
 \solution
 \input{solutions/ec/2010/41/Gate2.tex}
 
+\item The transfer function for a discrete time LTI system is given by:
+\begin{align}
+    H(z) = \frac{2 - \frac{3}{4}z^{-1}}{1 - \frac{3}{4}z^{-1} + \frac{1}{8}z^{-2}}
+\end{align}
+Consider the following statements:\\
+S1: The system is stable and causal for ROC: $\abs{z} > \frac{1}{2}$\\
+S2: The system is stable but not causal for ROC:  $\abs{z} < \frac{1}{4}$\\
+S3: The system is neither stable nor causal for ROC:  $\frac{1}{4}<\abs{z} < \frac{1}{2}$\\
+Which one of the following statement are valid?
+\begin{enumerate}
+    \item Both S1 and S2 are true
+    \item Both S2 and S3 are true
+    \item Both S1 and S3 are true
+    \item S1, S2 and S3 are all true
+\end{enumerate}
+\solution
+\input{solutions/ec/2010/42/main.tex}
 \item The impulse response of a system is $h(t)=tu(t)$. For an input $u(t-1)$, the output is 
 \begin{enumerate}
     \item $\dfrac{t^{2}}{2}u(t)$
