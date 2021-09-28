@@ -1,172 +1,53 @@
-
-\begin{definition}[Dirac-delta impulse]
+Let 
 \begin{align}
- \delta\brak{t}=
- \begin{cases}
- \infty , & t=0\\
- 0, & otherwise
- \end{cases}
+  x\brak{t}&=\cos{\brak{20k\pi t}}
+  &= \cos{\cbrak{2\pi (10k) t}}
+  \\
+  \implies B_x &= 10 kHz
 \end{align}
-\end{definition}
-\begin{lemma}[Shifting property of $\delta\brak{t}$]
- If $g\brak{t}$ is a continuous and finite function at $t=a$ then
- \begin{align}
-     \int_{-\infty}^{\infty}\delta\brak{t-a}g\brak{t}dt=g\brak{a}
- \end{align}
- We also have
- \begin{align}
-     \int_{-\infty}^{\infty}\delta\brak{t-a}\delta\brak{t-b}dt=\delta\brak{a-b}\label{translation}
- \end{align}
-\end{lemma}
-%%%%%%%%%
-\begin{theorem}
-Fourier transform of shifted impulse is the complex exponential.
+where $B_x$ is the bandwidth of $x(t)$.  Then 
 \begin{align}
-    G\brak{f}=\mathcal{F}\cbrak{\delta\brak{t-a}}=e^{-i2\pi fa}
-\end{align}
-\end{theorem}
-\begin{proof}
- \begin{align}
-     G\brak{f}&=\int_{-\infty}^{\infty}\delta\brak{t-a}e^{-i2\pi ft}dt\\
-     &=e^{-i2\pi fa}
- \end{align}
-\end{proof}
-%%%%%%%%%
-\begin{corollary}
-Inverse Fourier Transform of the complex exponential must be the shifted impulse. So
-\begin{align}
-    \mathcal{F}^{-1}\cbrak{e^{-2\pi fa}}&=\int_{-\infty}^{\infty}e^{-2\pi fa}e^{i2\pi ft}df\\
-    &=\int_{-\infty}^{\infty}e^{i2\pi f\brak{t-a}}df\\
-    &=\int_{-\infty}^{\infty}e^{-i2\pi f\brak{t-a}}df\\
-    &=\delta\brak{t-a}
-\end{align}
-\end{corollary}
-%%%%%%%%%
-\begin{theorem}
-The Fourier transform of $g\brak{t}=e^{i2\pi at}$ is given by 
-\begin{align}
-    G\brak{f}=\mathcal{F}\cbrak{e^{i2\pi at}}=\delta\brak{f-a}
-\end{align}
-\begin{proof}
- \begin{align}
-     G\brak{f}&=\int_{-\infty}^{\infty}e^{i2\pi at}e^{-i2\pi ft}dt\\
-     &=\int_{-\infty}^{\infty}e^{i2\pi t\brak{a-f}}dt\\
-     &=\delta\brak{f-a}
- \end{align}
-\end{proof}
-\end{theorem}
-%%%%%%%%
-\begin{lemma}[Linearity of Fourier Transform]
-\begin{align}
-    \mathcal{F}\cbrak{c_1g\brak{t}+c_2h\brak{t}}=c_1\mathcal{F}\cbrak{g\brak{t}}+c_2\mathcal{F}\cbrak{h\brak{t}}
-\end{align}
-\end{lemma}
-%%%%%%%
-\begin{lemma}\label{fre}
-Let $x\brak{t}$ be a signal, its Fourier Transform  be of the form
-\begin{align}
-    G_x\brak{f}=c_1\delta\brak{f-a_1A}+c_2\delta\brak{f-a_2A}+...
-\end{align}
-where $c_i\in \mathbb{C}$ and $a_i\in \mathbb{R}$. 
-Then the frequencies present in the signal are $a_jA $ where $a_j\in \mathbb{R}^{+}$
-\end{lemma}
-%%%%%%%
-Let $x\brak{t}=\cos{\brak{2\pi At}}$, where $A=10kHz$.
-\begin{align}
-  \cos{\brak{2\pi At}}=\frac{e^{i2\pi At}+e^{-i2\pi At}}{2}  
-\end{align}
-The Fourier transform of $x\brak{t}$ 
-\begin{align}
-    G_x\brak{f}&=\int_{-\infty}^{\infty}\frac{e^{i2\pi At}+e^{-i2\pi At}}{2}e^{-i2\pi ft}dt\\
-    &=\frac{1}{2}\sbrak{\int_{-\infty}^{\infty}e^{-i2\pi t(f-A)}dt+\int_{-\infty}^{\infty}e^{-i2\pi t(A+F)}}\\
-    &=\frac{1}{2}\sbrak{\delta\brak{f-A}+\delta\brak{f+A}}
-\end{align}
-$\therefore$ All the energy of the sinusoidal wave is  entirely localized at the frequencies given by $|f|=A$.
-\begin{align}
-    y\brak{t}&=\cos{\brak{2\pi At}}\cos{\brak{2\pi A\brak{1+\frac{t}{2}}}}\\
-    &=\frac{1}{2}\brak{\cos{\brak{2\pi A+3\pi At}}+\cos{\brak{2\pi A-\pi At}}}\\
-    &=\frac{1}{2}\brak{\cos{\brak{3\pi At}}+\cos{\brak{\pi At}}\label{yt}}
-\end{align}
-Fourier Transform of $y\brak{t}$ is given by
-\begin{multline}
-    G_y\brak{f}=\frac{1}{4}\sbrak{\delta\brak{f-\frac{3A}{2}}+\delta\brak{f+\frac{3A}{2}}}\\+\frac{1}{4}\sbrak{\delta\brak{f-\frac{A}{2}}+\delta\brak{f+\frac{A}{2}}}
-\end{multline}
-From lemma $\ref{fre}$ we can conclude that the frequencies present in signal $y\brak{t}$ are $\frac{A}{2},\frac{3A}{2}$
-\begin{lemma}{Multiplication property of Fourier Transform}\label{conv}
-\begin{align}
-    \text{If } x\brak{t} \fourier X\brak{f} \\
-    y\brak{t} \fourier Y\brak{f}
-\end{align}
-Then
-\begin{align}
-   x\brak{t}y\brak{t} \fourier  X\brak{f} \ast Y\brak{f}
-\end{align}
-where $\ast$ represents convolution
-\end{lemma}
-\begin{lemma}
-\begin{align}
-    \delta\brak{t-t_0}\ast g\brak{t}=g\brak{t-t_0}\label{convdelta}
-\end{align}
-\end{lemma}
-\begin{lemma}{Computing $G_y\brak{f}$ using convolution}
-\begin{align}
-    x\brak{t}&=\cos{\brak{2\pi At}}\\
-    x\brak{t}& \fourier X_1\brak{f}=\frac{1}{2}\sbrak{\delta\brak{f-A}+\delta\brak{f+A}}\\
-    x\brak{1+\frac{t}{2}}&=\cos{\brak{\pi At}}\\
-    x\brak{1+\frac{t}{2}}& \fourier X_2\brak{f}=\frac{1}{2}\sbrak{\delta\brak{f-\frac{A}{2}}+\delta\brak{f+\frac{A}{2}}}
-\end{align}
-Using lemma $\ref{conv}$ 
-\begin{align}
-    G_y\brak{f}&=X_1\brak{f}\ast X_2\brak{f}\\
-    &=\brak{\frac{1}{2}\sbrak{\delta\brak{f-A}+\delta\brak{f+A}}}\ast  X_2\brak{f}\\
-    &=\frac{1}{2}\cbrak{\delta\brak{f-A}\ast  X_2\brak{f}+\delta\brak{f+A}\ast  X_2\brak{f}}
-\end{align}
-Using $\eqref{convdelta}$ 
-\begin{align}
-    G_y\brak{f}=\frac{1}{2}\brak{X_2\brak{f-A}+X_2\brak{f+A}}
-\end{align}
-\begin{multline}
-    G_y\brak{f}=\frac{1}{4}\sbrak{\delta\brak{f-\frac{3A}{2}}+\delta\brak{f+\frac{3A}{2}}}\\+\frac{1}{4}\sbrak{\delta\brak{f-\frac{A}{2}}+\delta\brak{f+\frac{A}{2}}}
-\end{multline}
-\end{lemma}
-\begin{align}
-  x\brak{t}&=\cos{\brak{20k\pi t}}\\
-    \text{bandwidth of } x\brak{t} &= 10 kHz\\
-    x\brak{1+\frac{t}{2}} &= \cos{\brak{20k\pi+10k\pi t}}\\
-    \text{bandwidth of } x\brak{1+\frac{t}{2}} &=  5 kHz\\
-    \text{from \eqref{yt} } 
     y\brak{t}&= \cos{\brak{30k\pi t}}+\cos{\brak{10k\pi t}}\\
-    \text{bandwidth of } y\brak{t} &= \frac{30}{2} kHz\\
+    \implies B_y &= \frac{30}{2} 
     &= 15 kHz
 \end{align}
+Thus, the Nyquist rate is 
 \begin{align}
-    \text{Nyquist rate} &= 2 \times \text{maximum frequency}\\
+B &= 2 B_y\\
     &= 30 kHz
 \end{align}
+Figs.  \ref{ec/2021/4/1}- \ref{ec/2021/4/5} show the sampling theorem in action.  Fig. \ref{ec/2021/4/5} shows
+how the violation of the the Nyquist criterion results in distortion during reconstruction.
+%
 \begin{figure}[!h]
  \centering
  \includegraphics[width=\columnwidth]{solutions/ec/2021/4/figs/x.png}
  \caption{$x\brak{t}$:Sinusoidal signal with freq=10kHz}
+ \label{ec/2021/4/1}
 \end{figure}
 \begin{figure}[!h]
  \centering
  \includegraphics[width=\columnwidth]{solutions/ec/2021/4/figs/xf.png}
  \caption{DFT of $x\brak{t}$. $Bandwidth=10000$}
-\end{figure}
+ \label{ec/2021/4/2}
+ \end{figure}
 \begin{figure}[!h]
  \centering
  \includegraphics[width=\columnwidth]{solutions/ec/2021/4/figs/four_y.png}
  \caption{DFT of $y\brak{t}$.$Bandwidth=15000$}
-\end{figure}
+ \label{ec/2021/4/3}
+ \end{figure}
 \begin{figure}[!h]
  \centering
  \includegraphics[width=\columnwidth]{solutions/ec/2021/4/figs/stem_y.png}
  \caption{stem plot of $y\brak{t}$ sampled at 60kHz}
-\end{figure}
+ \label{ec/2021/4/4}
+ \end{figure}
 \begin{figure}[!h]
  \centering
  \includegraphics[width=\columnwidth]{solutions/ec/2021/4/figs/interpolation.png}
  \caption{Shannon interpolation of $y\brak{t}$}
-\end{figure}
+ \label{ec/2021/4/5}
+ \end{figure}
 
 
