@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  28 SEP 2021 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.1)  30 SEP 2021 07:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1562,33 +1562,33 @@ LaTeX Info: Redefining \nameref on input line 88.
 \c@lemma=\count384
 \c@example=\count385
 \c@rem=\count386
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 245.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24
-5.
+7.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-45.
+47.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-45.
+47.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-45.
+47.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-45.
+47.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1879,19 +1879,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) [10 <./solutions/ec/2021/4/figs/x.png> <./solutions/ec/2021/4/figs/xf.png>]
-[11
+) [10 <./solutions/ec/2021/4/figs/x.png> <./solutions/ec/2021/4/figs/xf.png>]
+(./solutions/ec/2021/41/GATE_Assignment-1.tex
+Underfull \vbox (badness 6893) has occurred while \output is active []
 
- <./solutions/ec/2021/4/figs/four_y.png> <./solutions/ec/2021/4/figs/stem_y.png
-> <./solutions/ec/2021/4/figs/interpolation.png>] (./gvv_gate_dsp.aux)
+)) [11 <./solutions/ec/2021/4/figs/four_y.png> <./solutions/ec/2021/4/figs/stem
+_y.png> <./solutions/ec/2021/4/figs/interpolation.png>] (./gvv_gate_dsp.aux)
 Package rerunfilecheck Info: File `gvv_gate_dsp.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44563 strings out of 478994
- 994020 string characters out of 5864752
- 1538030 words of memory out of 5000000
- 60923 multiletter control sequences out of 15000+600000
+ 44579 strings out of 478994
+ 994317 string characters out of 5864752
+ 1538095 words of memory out of 5000000
+ 60927 multiletter control sequences out of 15000+600000
  500866 words of font info for 242 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  102i,15n,111p,504b,716s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1907,10 +1908,10 @@ ts/txsya.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on gvv_gate_dsp.pdf (11 pages, 379410 bytes).
+Output written on gvv_gate_dsp.pdf (11 pages, 382003 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 240 named destinations out of 1000 (max. 500000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 248 named destinations out of 1000 (max. 500000)
  194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
