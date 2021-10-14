@@ -1,0 +1,70 @@
+
+The energy of the signal $f(t)$ is given as.
+\begin{align}
+    E = \int_{-\infty}^{\infty} |f\brak{t}|^2 dt
+\end{align}
+The energy of signal $f(2t)$,
+\begin{align}
+    E' = \int_{-\infty}^{\infty} |f\brak{2t}|^2 dt
+\end{align}
+Putting $u = 2t$,
+\begin{align}
+    du = 2dt\\
+    E' = \int_{-\infty}^{\infty} |f\brak{u}|^2 \frac{du}{2} = \frac{E}{2}
+\end{align}
+\textbf{Answer}: Option B
+Let 
+\begin{align}
+    f\brak{t} = sinc{\brak{t}}\\
+%    sinc{\brak{t}} \fourier rect\brak{f}
+\end{align}
+Using 
+%\begin{lemma}
+Parseval's theorem, 
+%states that there is no loss of information in Fourier transform and the amount of energy remains the same in time and frequency domains.
+\begin{align}
+    \int_{-\infty}^{\infty} |x\brak{t}|^{2} dt = \int_{-\infty}^{\infty} |X\brak{f}|^{2} df
+\end{align}
+%\end{lemma}
+%Consider a signal 
+% \begin{align}
+%     f\brak{t} = sinc{\brak{t}}\\
+%     sinc{\brak{t}} \fourier rect\brak{f}
+% \end{align}
+% where 
+% \begin{align}
+% sinc{\brak{t}} =
+%     \begin{cases}
+%     1 & t = 0\\
+%     \frac{\sin{\pi t}}{\pi t} & otherwise
+%     \end{cases}\\
+%     rect\brak{t} =
+%     \begin{cases}
+%     1 & \text{if } |t| \leq \frac{1}{2}\\
+%     0 & \text{if } otherwise
+%     \end{cases}
+% \end{align}
+% Energy of the signal using Parseval's thoerem,
+Since \begin{align}
+%    f\brak{t} = sinc{\brak{t}}\\
+    sinc{\brak{t}} \fourier rect\brak{f},
+\end{align}
+\begin{align}
+     \int_{-\infty}^{\infty} sinc^2{\brak{t}}  dt &= \int_{-\infty}^{\infty} \brak{rect\brak{f}}^2  df \\
+     &= \int_{-\frac{1}{2}}^{\frac{1}{2}} df = 1
+\end{align}
+Also, 
+\begin{align}
+    f\brak{2t} = sinc{\brak{2t}}
+\end{align}
+Using \begin{align}
+    \label{scale} g\brak{\alpha t} \fourier \frac{1}{\abs{\alpha}}G\brak{\frac{f}{\alpha}}\\
+    \implies sinc{\brak{2t}} \fourier\frac{1}{2}rect\brak{\frac{f}{2}}
+\end{align}
+%Energy of signal,
+\begin{align}
+    E' &= \int_{-\infty}^{\infty} sinc^2{\brak{2t}}  dt \\
+    &= \int_{-\infty}^{\infty} \brak{\frac{1}{2}rect\brak{\frac{f}{2}}}^2 df \\
+    &= \frac{1}{4}\int_{-1}^{1} df = \frac{1}{2} = \frac{E}{2}
+\end{align}
+
