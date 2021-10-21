@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  11 OCT 2021 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.8.26)  20 OCT 2021 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1562,33 +1562,33 @@ LaTeX Info: Redefining \nameref on input line 88.
 \c@lemma=\count384
 \c@example=\count385
 \c@rem=\count386
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 247.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 248.
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24
-7.
+8.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
-47.
+48.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
-47.
+48.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
-47.
+48.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
-47.
+48.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1597,7 +1597,52 @@ File: utxsyc.fd 2000/12/15 v3.1
 \openout5 = `gvv_gate_dsp.toc'.
 
 
-(./problems.tex (./solutions/ec/1999/2/1/latex_code.tex
+(./problems.tex (./solutions/ec/1998/1/4/Gate_Assignment_4.tex
+<solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_1.png, id=31, 398.48875pt 
+x 264.99pt>
+File: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_1.png Graphic file (t
+ype png)
+<use solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_1.png>
+Package pdftex.def Info: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_1.
+png  used on input line 28.
+(pdftex.def)             Requested size: 252.0pt x 167.57535pt.
+<solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_2.png, id=33, 398.48875pt 
+x 264.99pt>
+File: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_2.png Graphic file (t
+ype png)
+<use solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_2.png>
+Package pdftex.def Info: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_2.
+png  used on input line 51.
+(pdftex.def)             Requested size: 252.0pt x 167.57535pt.
+
+Underfull \vbox (badness 2762) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_1.png>]
+<solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_3.png, id=62, 388.45125pt 
+x 264.99pt>
+File: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_3.png Graphic file (t
+ype png)
+<use solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_3.png>
+Package pdftex.def Info: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_3.
+png  used on input line 77.
+(pdftex.def)             Requested size: 252.0pt x 171.9099pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_4.png, id=63, 390.45876pt 
+x 264.99pt>
+File: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_4.png Graphic file (t
+ype png)
+<use solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_4.png>
+Package pdftex.def Info: solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_4.
+png  used on input line 100.
+(pdftex.def)             Requested size: 252.0pt x 171.02438pt.
+) [2 <./solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_2.png> <./solutions
+/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_3.png> <./solutions/ec/1998/1/4/Figu
+res/Gate_Assignment_4_Fig_4.png>] (./solutions/ec/1999/2/1/latex_code.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 5.
 
@@ -1621,18 +1666,22 @@ LaTeX Warning: Command \j invalid in math mode on input line 24.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
-[][]\OT1/txr/bx/n/12 Lemma 1.2. []\OT1/txr/m/it/12 The Fourier trans-form of
+[][]\OT1/txr/bx/n/12 Lemma 2.2. []\OT1/txr/m/it/12 The Fourier trans-form of
  []
 
-) (./solutions/ec/2000/1/13/GATE_Assignment-4.tex
-<solutions/ec/2000/1/13/figures/input signals.png, id=35, 387.4475pt x 264.99pt
+)
+Underfull \vbox (badness 3078) has occurred while \output is active []
+
+
+(./solutions/ec/2000/1/13/GATE_Assignment-4.tex
+<solutions/ec/2000/1/13/figures/input signals.png, id=83, 387.4475pt x 264.99pt
 >
 File: solutions/ec/2000/1/13/figures/input signals.png Graphic file (type png)
 <use solutions/ec/2000/1/13/figures/input signals.png>
 Package pdftex.def Info: solutions/ec/2000/1/13/figures/input signals.png  used
  on input line 11.
 (pdftex.def)             Requested size: 252.0pt x 172.35468pt.
-<solutions/ec/2000/1/13/figures/output signals.png, id=37, 376.40625pt x 264.99
+<solutions/ec/2000/1/13/figures/output signals.png, id=84, 376.40625pt x 264.99
 pt>
 File: solutions/ec/2000/1/13/figures/output signals.png Graphic file (type png)
 
@@ -1640,39 +1689,26 @@ File: solutions/ec/2000/1/13/figures/output signals.png Graphic file (type png)
 Package pdftex.def Info: solutions/ec/2000/1/13/figures/output signals.png  use
 d on input line 17.
 (pdftex.def)             Requested size: 252.0pt x 177.41298pt.
-<solutions/ec/2000/1/13/figures/linear.png, id=38, 376.40625pt x 264.99pt>
+<solutions/ec/2000/1/13/figures/linear.png, id=85, 376.40625pt x 264.99pt>
 File: solutions/ec/2000/1/13/figures/linear.png Graphic file (type png)
 <use solutions/ec/2000/1/13/figures/linear.png>
 Package pdftex.def Info: solutions/ec/2000/1/13/figures/linear.png  used on inp
 ut line 22.
 (pdftex.def)             Requested size: 252.0pt x 177.41298pt.
-<solutions/ec/2000/1/13/figures/Time variant.png, id=39, 378.41376pt x 264.99pt
+<solutions/ec/2000/1/13/figures/Time variant.png, id=86, 378.41376pt x 264.99pt
 >
 File: solutions/ec/2000/1/13/figures/Time variant.png Graphic file (type png)
 <use solutions/ec/2000/1/13/figures/Time variant.png>
 Package pdftex.def Info: solutions/ec/2000/1/13/figures/Time variant.png  used 
 on input line 27.
 (pdftex.def)             Requested size: 252.0pt x 176.46683pt.
-
+ [3 <./solutions/ec/2000/1/13/figures/input signals.png> <./solutions/ec/2000/1
+/13/figures/output signals.png>]) (./solutions/ec/2001/1/21/latex3.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Overfull \vbox (46.68921pt too high) has occurred while \output is active []
-
-)
-(./solutions/ec/2001/1/21/latex3.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./solutions/ec/2000/1/13/figures/input signals.png> <./solutions/ec/2000/1
-/13/figures/output signals.png> <./solutions/ec/2000/1/13/figures/linear.png> <
-./solutions/ec/2000/1/13/figures/Time variant.png>])
-(./solutions/ec/2004/64/Gate_Assignment_3.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<solutions/ec/2004/64/figures/simulated_plot.png, id=110, 462.528pt x 346.896pt
+ [4 <./solutions/ec/2000/1/13/figures/linear.png> <./solutions/ec/2000/1/13/fig
+ures/Time variant.png>]) (./solutions/ec/2004/64/Gate_Assignment_3.tex
+<solutions/ec/2004/64/figures/simulated_plot.png, id=155, 462.528pt x 346.896pt
 >
 File: solutions/ec/2004/64/figures/simulated_plot.png Graphic file (type png)
 <use solutions/ec/2004/64/figures/simulated_plot.png>
@@ -1680,355 +1716,103 @@ Package pdftex.def Info: solutions/ec/2004/64/figures/simulated_plot.png  used
 on input line 32.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 )
-Underfull \vbox (badness 1389) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./solutions/ec/2004/64/figures/simulated_plot.png>]
+
 (./solutions/ec/2005/6/latex_code.tex
 Overfull \hbox (137.52173pt too wide) detected at line 11
  []$[]  [] \OT1/txr/m/n/12 + [] = \OML/txmi/m/it/12 dfrac[][][] < [] < []$ []  
 
  []
 
-<solutions/ec/2005/6/figures/plot.png, id=146, 433.62pt x 433.62pt>
+<solutions/ec/2005/6/figures/plot.png, id=157, 433.62pt x 433.62pt>
 File: solutions/ec/2005/6/figures/plot.png Graphic file (type png)
 <use solutions/ec/2005/6/figures/plot.png>
 Package pdftex.def Info: solutions/ec/2005/6/figures/plot.png  used on input li
 ne 15.
 (pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
-) (./solutions/ec/2006/15/main.tex) (./solutions/ec/2008/32/GATEAssignment2.tex
-
-LaTeX Warning: Reference `ec/2008/32/1' on page 4 undefined on input line 27.
-
-<solutions/ec/2008/32/figs/rect.png, id=148, 390.45876pt x 262.9825pt>
-File: solutions/ec/2008/32/figs/rect.png Graphic file (type png)
-<use solutions/ec/2008/32/figs/rect.png>
-Package pdftex.def Info: solutions/ec/2008/32/figs/rect.png  used on input line
- 30.
-(pdftex.def)             Requested size: 252.0pt x 169.72873pt.
-<solutions/ec/2008/32/figs/sinc.png, id=149, 398.48875pt x 262.9825pt>
-File: solutions/ec/2008/32/figs/sinc.png Graphic file (type png)
-<use solutions/ec/2008/32/figs/sinc.png>
-Package pdftex.def Info: solutions/ec/2008/32/figs/sinc.png  used on input line
- 36.
-(pdftex.def)             Requested size: 252.0pt x 166.30583pt.
-[4 <./solutions/ec/2005/6/figures/plot.png>])
-(./solutions/ec/2010/15/GateAssignment2.tex) (./solutions/ec/2010/41/Gate2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
-[]|$[]$
- []
-
-
-Overfull \hbox (10.59564pt too wide) in paragraph at lines 5--18
- [] 
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 28--30
-\OT1/txr/m/n/12 Since ini-tial con-di-tions are zero. Laplace
- []
-
-<solutions/ec/2010/41/figs/plt.png, id=192, 373.395pt x 262.9825pt>
-File: solutions/ec/2010/41/figs/plt.png Graphic file (type png)
-<use solutions/ec/2010/41/figs/plt.png>
-Package pdftex.def Info: solutions/ec/2010/41/figs/plt.png  used on input line 
-44.
-(pdftex.def)             Requested size: 252.0pt x 177.48544pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 )
-Underfull \vbox (badness 6173) has occurred while \output is active []
-
- [5 <./solutions/ec/2008/32/figs/rect.png> <./solutions/ec/2008/32/figs/sinc.pn
-g>]
-(./solutions/ec/2010/42/main.tex
-Underfull \vbox (badness 4132) has occurred while \output is active []
-
-<solutions/ec/2010/42/Graphs/ROC.png, id=226, 462.528pt x 346.896pt>
-File: solutions/ec/2010/42/Graphs/ROC.png Graphic file (type png)
-<use solutions/ec/2010/42/Graphs/ROC.png>
-Package pdftex.def Info: solutions/ec/2010/42/Graphs/ROC.png  used on input lin
-e 22.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-)
-(./solutions/ec/2013/8/GateAssignment1.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./solutions/ec/2010/41/figs/plt.png> <./solutions/ec/2010/42/Graphs/ROC.pn
-g>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-<solutions/ec/2013/8/figures/GateAssignment1(1).png, id=293, 387.4475pt x 279.0
-425pt>
-File: solutions/ec/2013/8/figures/GateAssignment1(1).png Graphic file (type png
-)
-<use solutions/ec/2013/8/figures/GateAssignment1(1).png>
-Package pdftex.def Info: solutions/ec/2013/8/figures/GateAssignment1(1).png  us
-ed on input line 141.
-(pdftex.def)             Requested size: 252.0pt x 181.49469pt.
-<solutions/ec/2013/8/figures/GateAssignment1(2).png, id=294, 377.41pt x 279.042
-5pt>
-File: solutions/ec/2013/8/figures/GateAssignment1(2).png Graphic file (type png
-)
-<use solutions/ec/2013/8/figures/GateAssignment1(2).png>
-Package pdftex.def Info: solutions/ec/2013/8/figures/GateAssignment1(2).png  us
-ed on input line 148.
-(pdftex.def)             Requested size: 252.0pt x 186.31882pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<solutions/ec/2013/8/figures/GateAssignment1(3).png, id=295, 377.41pt x 279.042
-5pt>
-File: solutions/ec/2013/8/figures/GateAssignment1(3).png Graphic file (type png
-)
-<use solutions/ec/2013/8/figures/GateAssignment1(3).png>
-Package pdftex.def Info: solutions/ec/2013/8/figures/GateAssignment1(3).png  us
-ed on input line 155.
-(pdftex.def)             Requested size: 252.0pt x 186.31882pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./solutions/ec/2013/39/latex_code.tex
-Underfull \vbox (badness 3954) has occurred while \output is active []
-
- [8 <./solutions/ec/2013/8/figures/GateAssignment1(1).png> <./solutions/ec/2013
-/8/figures/GateAssignment1(2).png> <./solutions/ec/2013/8/figures/GateAssignmen
-t1(3).png>])
-Underfull \hbox (badness 2229) in paragraph at lines 69--161
-\OT1/txr/m/n/12 upon sub-sti-tut-ing from [] and [].
- []
-
-(./solutions/ec/2017/8/main.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
-
- []
-
+<solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_1.png, id=158, 396.48125pt 
+x 262.9825pt>
+File: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_1.png Graphic file (ty
+pe png)
+<use solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_1.png>
+Package pdftex.def Info: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_1.p
+ng  used on input line 72.
+(pdftex.def)             Requested size: 252.0pt x 167.15253pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+ [5 <./solutions/ec/2004/64/figures/simulated_plot.png>]
+<solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_2.png, id=191, 397.485pt x 
+262.9825pt>
+File: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_2.png Graphic file (ty
+pe png)
+<use solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_2.png>
+Package pdftex.def Info: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_2.p
+ng  used on input line 89.
+(pdftex.def)             Requested size: 201.60077pt x 133.38495pt.
+<solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_3.png, id=192, 397.485pt x 
+262.9825pt>
+File: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_3.png Graphic file (ty
+pe png)
+<use solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_3.png>
+Package pdftex.def Info: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_3.p
+ng  used on input line 96.
+(pdftex.def)             Requested size: 201.60077pt x 133.38495pt.
+<solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_4.png, id=193, 397.485pt x 
+262.9825pt>
+File: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_4.png Graphic file (ty
+pe png)
+<use solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_4.png>
+Package pdftex.def Info: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_4.p
+ng  used on input line 103.
+(pdftex.def)             Requested size: 201.60077pt x 133.38495pt.
+<solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_5.png, id=194, 397.485pt x 
+262.9825pt>
+File: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_5.png Graphic file (ty
+pe png)
+<use solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_5.png>
+Package pdftex.def Info: solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_5.p
+ng  used on input line 110.
+(pdftex.def)             Requested size: 201.60077pt x 133.38495pt.
+ (./solutions/ec/1999/1/3/main.tex [6 <./solutions/ec/2005/6/figures/plot.png> 
+<./solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_1.png> <./solutions/ec/20
+05/85/Figures/Gate_Assignment_3_Fig_2.png> <./solutions/ec/2005/85/Figures/Gate
+_Assignment_3_Fig_3.png> <./solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_
+4.png> <./solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_5.png>]
 
+LaTeX Warning: Reference `ec/1999/1/3/lemma:timeShift' on page 7 undefined on i
+nput line 31.
+
+) (./solutions/ec/2005/25/GateAssignment3.tex
+Underfull \hbox (badness 2042) in paragraph at lines 19--20
+[][]\OT1/txr/bx/n/12 Theorem 0.1. []\OT1/txr/m/it/12 Con-sider the n-dimensiona
+l
  []
 
+Runaway argument?
+ \vec {\dot X}=\vec {A}\vec {X}+\vec {B}\vec {U}, \vec {Y}=\vec {C}\vec \ETC.
+! Paragraph ended before \align was complete.
+<to be read again> 
+                   \par 
+l.69 
+     
+? 
+! Emergency stop.
+<to be read again> 
+                   \par 
+l.69 
+     
+End of file on the terminal!
 
-Underfull \hbox (badness 2134) in paragraph at lines 54--55
-[]\OT1/txr/m/n/12 Since both the Laws hold, the sys-tem
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
-
- []
-
-<solutions/ec/2017/8/graphs/input_signals.png, id=359, 387.4475pt x 264.99pt>
-File: solutions/ec/2017/8/graphs/input_signals.png Graphic file (type png)
-<use solutions/ec/2017/8/graphs/input_signals.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/input_signals.png  used on 
-input line 81.
-(pdftex.def)             Requested size: 252.0pt x 172.35468pt.
-<solutions/ec/2017/8/graphs/output_signals.png, id=360, 387.4475pt x 266.9975pt
->
-File: solutions/ec/2017/8/graphs/output_signals.png Graphic file (type png)
-<use solutions/ec/2017/8/graphs/output_signals.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/output_signals.png  used on
- input line 86.
-(pdftex.def)             Requested size: 252.0pt x 173.66037pt.
-<solutions/ec/2017/8/graphs/law_of_additivity.png, id=361, 387.4475pt x 264.99p
-t>
-File: solutions/ec/2017/8/graphs/law_of_additivity.png Graphic file (type png)
-<use solutions/ec/2017/8/graphs/law_of_additivity.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/law_of_additivity.png  used
- on input line 91.
-(pdftex.def)             Requested size: 252.0pt x 172.35468pt.
-<solutions/ec/2017/8/graphs/law_of_homogeneity.png, id=362, 381.425pt x 266.997
-5pt>
-File: solutions/ec/2017/8/graphs/law_of_homogeneity.png Graphic file (type png)
-
-<use solutions/ec/2017/8/graphs/law_of_homogeneity.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/law_of_homogeneity.png  use
-d on input line 96.
-(pdftex.def)             Requested size: 252.0pt x 176.39813pt.
-<solutions/ec/2017/8/graphs/time_invariance.png, id=363, 387.4475pt x 264.99pt>
-
-File: solutions/ec/2017/8/graphs/time_invariance.png Graphic file (type png)
-<use solutions/ec/2017/8/graphs/time_invariance.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/time_invariance.png  used o
-n input line 102.
-(pdftex.def)             Requested size: 252.0pt x 172.35468pt.
-
-Overfull \hbox (14.51999pt too wide) in paragraph at lines 106--108
-[]$[]$ 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
-
- []
-
-
-Underfull \hbox (badness 5878) in paragraph at lines 110--113
-\OT1/txr/m/n/12 The Im-pulse func-tion can be loosely
- []
-
-[10 <./solutions/ec/2017/8/graphs/input_signals.png> <./solutions/ec/2017/8/gra
-phs/output_signals.png> <./solutions/ec/2017/8/graphs/law_of_additivity.png>]
-Overfull \hbox (37.49998pt too wide) in paragraph at lines 137--139
-[]$[]$ 
- []
-
-
-Overfull \hbox (50.65196pt too wide) in paragraph at lines 165--167
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
-
- []
-
-
-Overfull \hbox (3.20398pt too wide) in paragraph at lines 208--210
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 208--210
-\OT1/txr/m/n/12 by $\OML/txmi/m/it/12 H\OT1/txr/m/n/12 (\OML/txmi/m/it/12 f\OT1
-/txr/m/n/12 )$ and of the rect-an-gu-lar sig-nal,
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./solutions/ec/2017/8/graphs/law_of_homogeneity.png> <./solutions/ec/2017
-/8/graphs/time_invariance.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-<solutions/ec/2017/8/graphs/fourier_impulse_response.png, id=450, 462.528pt x 3
-46.896pt>
-File: solutions/ec/2017/8/graphs/fourier_impulse_response.png Graphic file (typ
-e png)
-<use solutions/ec/2017/8/graphs/fourier_impulse_response.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/fourier_impulse_response.pn
-g  used on input line 324.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<solutions/ec/2017/8/graphs/fourier_impulse_response_zoomed.png, id=451, 462.52
-8pt x 346.896pt>
-File: solutions/ec/2017/8/graphs/fourier_impulse_response_zoomed.png Graphic fi
-le (type png)
-<use solutions/ec/2017/8/graphs/fourier_impulse_response_zoomed.png>
-Package pdftex.def Info: solutions/ec/2017/8/graphs/fourier_impulse_response_zo
-omed.png  used on input line 329.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-)
-(./solutions/ec/2019/33/latex_code.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <./solutions/ec/2017/8/graphs/fourier_impulse_response.png> <./solutions/e
-c/2017/8/graphs/fourier_impulse_response_zoomed.png>]) (./solutions/ec/2021/4/G
-ate.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<solutions/ec/2021/4/figs/x.png, id=479, 392.46625pt x 248.93pt>
-File: solutions/ec/2021/4/figs/x.png Graphic file (type png)
-<use solutions/ec/2021/4/figs/x.png>
-Package pdftex.def Info: solutions/ec/2021/4/figs/x.png  used on input line 24.
-
-(pdftex.def)             Requested size: 252.0pt x 159.83882pt.
-<solutions/ec/2021/4/figs/xf.png, id=480, 369.38pt x 248.93pt>
-File: solutions/ec/2021/4/figs/xf.png Graphic file (type png)
-<use solutions/ec/2021/4/figs/xf.png>
-Package pdftex.def Info: solutions/ec/2021/4/figs/xf.png  used on input line 30
-.
-(pdftex.def)             Requested size: 252.0pt x 169.8247pt.
-<solutions/ec/2021/4/figs/four_y.png, id=481, 389.455pt x 248.93pt>
-File: solutions/ec/2021/4/figs/four_y.png Graphic file (type png)
-<use solutions/ec/2021/4/figs/four_y.png>
-Package pdftex.def Info: solutions/ec/2021/4/figs/four_y.png  used on input lin
-e 36.
-(pdftex.def)             Requested size: 252.0pt x 161.06949pt.
-<solutions/ec/2021/4/figs/stem_y.png, id=482, 387.4475pt x 248.93pt>
-File: solutions/ec/2021/4/figs/stem_y.png Graphic file (type png)
-<use solutions/ec/2021/4/figs/stem_y.png>
-Package pdftex.def Info: solutions/ec/2021/4/figs/stem_y.png  used on input lin
-e 42.
-(pdftex.def)             Requested size: 252.0pt x 161.90892pt.
-<solutions/ec/2021/4/figs/interpolation.png, id=483, 381.425pt x 248.93pt>
-File: solutions/ec/2021/4/figs/interpolation.png Graphic file (type png)
-<use solutions/ec/2021/4/figs/interpolation.png>
-Package pdftex.def Info: solutions/ec/2021/4/figs/interpolation.png  used on in
-put line 48.
-(pdftex.def)             Requested size: 252.0pt x 164.46143pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [14 <./solutions/ec/2021/4/figs/x.png> <./solutions/ec/2021/4/figs/xf.png>]
-Underfull \vbox (badness 5862) has occurred while \output is active []
-
-
-(./solutions/ec/2021/41/GATE_Assignment-1.tex)) [15 <./solutions/ec/2021/4/figs
-/four_y.png> <./solutions/ec/2021/4/figs/stem_y.png> <./solutions/ec/2021/4/fig
-s/interpolation.png>] (./gvv_gate_dsp.aux)
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `gvv_gate_dsp.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 44789 strings out of 478994
- 998865 string characters out of 5864751
- 1538865 words of memory out of 5000000
- 60989 multiletter control sequences out of 15000+600000
- 502242 words of font info for 244 fonts, out of 8000000 for 9000
+ 44379 strings out of 478994
+ 992331 string characters out of 5864751
+ 1525460 words of memory out of 5000000
+ 60872 multiletter control sequences out of 15000+600000
+ 484627 words of font info for 204 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 102i,16n,111p,504b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{lemma.41.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
-/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfon
-ts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/font
-s/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfon
-ts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/
-share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/
-type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_gate_dsp.pdf (15 pages, 506430 bytes).
-PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 357 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 102i,18n,111p,504b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

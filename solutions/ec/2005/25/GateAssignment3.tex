@@ -1,0 +1,146 @@
+
+
+\begin{definition}[State Space representation]
+It is a mathematical model of a physical system, as a set of input, output and state variables related by first order difference or differential equations. The most general state representation of a linear system with p inputs, q outputs, and n state variables can be written as
+\begin{align}
+    \vec{\dot X}&=\vec{A}\vec{X}+\vec{B}\vec{U}\\
+    \vec{Y}&=\vec{C}\vec{X}+\vec{D}\vec{U}
+\end{align}
+where, $\vec{X}\in R^n$ is the state vector, $\vec{Y}\in R^q$ is the output vector, $\vec{U}\in R^p$ is input vector, $\vec{A}\in R^{n\times n}$ is the state matrix, $\vec{B}\in R^{n\times p}$ is input matrix, $\vec{C}\in R^{q\times n}$ is output matrix, $\vec{D}\in R^{q\times p}$ is feedthrough matrix.
+\end{definition}
+\begin{definition}[Eigen values of State Space representation] 
+These are the solutions of the charecteristic equation
+\begin{align}
+    \triangle(\lambda)=det(\lambda \vec{I}-\vec{A})=0
+\end{align}
+where A is the state matrix. 
+\end{definition}
+\begin{theorem}
+Consider the n-dimensional continuous time linear system
+\begin{align}
+    \vec{\dot X}=\vec{A}\vec{X}+\vec{B}\vec{U}, \vec{Y}=\vec{C}\vec{X}+\vec{D}\vec{U}
+    \label{ec/2005/25{eq:org}
+\end{align}
+Let $\vec{T}$ be an $n\times n$ real non-singular matrix and let $\vec{\bar X}= \vec{T}\vec{X}$. Then the state equation 
+\begin{align}
+    \vec{\dot{\bar X}}=\vec{\bar A}\vec{\bar X}+ \vec{\bar B}\vec{U}, \vec{Y}=\vec{\bar C}\vec{\bar X}+\vec{\bar D}\vec{U}
+    \label{ec/2005/25{eq:new}
+\end{align}
+where $\vec{\bar A}=\vec{T}\vec{A}\vec{T}^{-1}, \vec{\bar B}=\vec{T}\vec{B}, \vec{\bar C}=\vec{C}\vec{T}^{-1}, \vec{\bar D}=\vec{D}$ is said to be equivalent to \eqref{ec/2005/25{eq:org}.
+\label{ec/2005/25{eq:th1}
+\end{theorem}
+\begin{proof}
+Given, $\vec{\dot X}=\vec{A}\vec{X}+\vec{B}\vec{U} \text{ and } \vec{Y}=\vec{C}\vec{X}+\vec{D}\vec{U}$, $T$ is a non-singular matrix such that $\vec{\bar X}= \vec{T}\vec{X}$. The same system can be defined using $\vec{\bar X}$ as the state,
+\begin{align}
+    \vec{\dot{\bar X}}&=\vec{T}\vec{\dot X}=\vec{T}\vec{A}\vec{X}+\vec{T}\vec{B}\vec{U}\\
+    &=\vec{T}\vec{A}\vec{T}^{-1}\vec{\bar X}+\vec{T}\vec{B}\vec{U}\\
+    \vec{Y}&=\vec{C}\vec{X}+\vec{D}\vec{U}=\vec{C}\vec{T}^{-1}\vec{\bar X}+\vec{D}\vec{U}
+\end{align}
+\end{proof}
+\begin{theorem}
+Equivalent state space representations have same set of eigen values
+\label{ec/2005/25{eq:th2}
+\end{theorem}
+\begin{proof}
+For the representation in \eqref{ec/2005/25{eq:org}, the eigen values [$\lambda$] are such that
+\begin{align}
+    \vec{A}\vec{x}&=\lambda \vec{x}\\
+    \Rightarrow(\vec{A}-\lambda \vec{I})\vec{x}&=0\\
+    \Rightarrow det(\vec{A}-\lambda \vec{I}&=0
+\end{align}
+For the representation in \eqref{ec/2005/25{eq:new}, the eigen values [$\mu$], are such that
+\begin{align}
+    \vec{\bar A}\vec{x}&=\mu \vec{x}\\
+    \Rightarrow(\vec{\bar A}-\mu \vec{I})\vec{x}&=0\\
+    \Rightarrow(\vec{T}\vec{A}\vec{T}^{-1}-\mu \vec{T}\vec{T}^{-1})\vec{x}&=0\\
+    \Rightarrow det(\vec{T}(\vec{A}-\mu \vec{I})\vec{T}^{-1})&=0\\
+    \Rightarrow det(\vec{A}-\mu \vec{I})&=0
+\end{align}
+Hence, equivalent state space representations have same set of eigen values.
+\end{proof}
+Given,
+\begin{align}
+    \vec{\dot X}&=\vec{A}\vec{X}+\vec{B}\vec{U}\\
+    \vec{\dot W}&=\vec{C}\vec{W}+\vec{D}\vec{U}
+\end{align}
+represent the same system. Hence, using \eqref{ec/2005/25{eq:th1} and \eqref{ec/2005/25{eq:th2}, we can conclude that
+$$[\lambda]=[\mu] \text{ and } \vec{W}=\vec{T}\vec{X}$$
+where $\vec{T}$ need not be identity matrix.
+
+
+Hence, option 2 is the correct answer.
+
+
+Let us now look at a numerical example to establish the correctness of the obtained result. Consider a SISO LTI system of order 2, represented by the equations
+\begin{align}
+    \dot x_1(t)&=-x_1(t)+1.5x_2(t)+2u(t)\\
+    \dot x_2(t)&=4x_1(t)+u(t)\\
+    y(t)&=1.5x_1(t)+0.625x_2(t)+u(t)
+\end{align}
+Its state space representation can be given by \eqref{ec/2005/25{eq:org}, where
+\begin{align}
+    \vec{X}=\begin{bmatrix}
+    x_1(t)\\x_2(t)
+    \end{bmatrix},\vec{Y}=y(t)\\
+    \vec{\dot X}=\begin{bmatrix}
+    \dot x_1(t)\\\dot x_2(t)
+    \end{bmatrix},\vec{U}=u(t)\\
+    \vec{A}=\begin{bmatrix}
+    -1 & 1.5\\
+    4 & 0
+    \end{bmatrix},\vec{B}=\begin{bmatrix}
+    2\\
+    1
+    \end{bmatrix}\\
+    \vec{C}=\begin{bmatrix}
+    1.5 & 0.625
+    \end{bmatrix},\vec{D}=1
+\end{align}
+The eigen values for this state representation are
+\begin{align}
+    det(\lambda \vec{I}-\vec{A})&=0\\
+    \begin{vmatrix}
+    \lambda+1 & -1.5\\
+    -4 & \lambda
+    \end{vmatrix}&=0\\
+    \lambda^2+\lambda-6&=0\\
+    [\lambda]&=\{-3,2\}
+\end{align}
+Even if we swap the equations, they still should represent the same system. So, consider a different state space representation, 
+\begin{align}
+    \vec{W}=\begin{bmatrix}
+    x_2(t)\\x_1(t)
+    \end{bmatrix},\vec{Y}=y(t)\\
+    \vec{\dot W}=\begin{bmatrix}
+    \dot x_2(t)\\\dot x_1(t)
+    \end{bmatrix},\vec{U}=u(t)
+\end{align}
+Clearly, $\vec{X}\neq \vec{W}$ and $\vec{W}=\vec{T}\vec{X}$, where $\vec{T}=\begin{bmatrix}
+0 & 1\\
+1 & 0
+\end{bmatrix}$. From \eqref{ec/2005/25{eq:th1}
+\begin{align}
+    \vec{\bar A}=\begin{bmatrix}
+    0 & 4\\
+    1.5 & -1
+    \end{bmatrix},\vec{\bar B}=\begin{bmatrix}
+    1\\
+    2
+    \end{bmatrix}\\
+    \vec{\bar C}=\begin{bmatrix}
+    0.625 & 1.5
+    \end{bmatrix},\vec{\bar D}=1
+\end{align}
+Also, the eigen values for this state representation are
+\begin{align}
+    det(\mu \vec{I}-\vec{A})&=0\\
+    \begin{vmatrix}
+    \mu & -4\\
+    -1.5 & \mu+1
+    \end{vmatrix}&=0\\
+    \mu^2+\mu-6&=0\\
+    [\mu]&=\{-3,2\}
+\end{align}
+Hence, both the state space representations are equivalent, and satisfy $[\lambda]=[\mu] \text{ and } \vec{W}=\vec{T}\vec{X}$, where $\vec{T}$ need not be identity matrix.
+
+

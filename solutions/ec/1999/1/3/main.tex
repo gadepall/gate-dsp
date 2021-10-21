@@ -1,0 +1,31 @@
+\begin{definition}
+\begin{align}
+    \sbrak{f (t)}=\mathcal{L}\cbrak{u (t) f (t)}
+\end{align}
+\end{definition}
+\begin{definition}[Laplace Transform]
+    It is an integral transform that converts a function of a real variable $t$ to a function of a complex variable $s$. The Laplace transform of $f(t)$ is denoted by $\mathcal{L}\cbrak{f(t)}$ or $F(s)$.
+    \begin{align}
+        F(s)=\mathcal{L}\cbrak{f(t)}=\int_{0}^{\infty}e^{-st}f(t)dt
+    \end{align}
+\end{definition}
+\begin{lemma}\label{ec/1999/1/3/lemma:timeShift}
+    Time Shift Property of Laplace transformation
+    \begin{align}
+        f(t-T)u(t-T) \laplace e^{-sT}F(s)
+    \end{align}
+\end{lemma}
+\begin{proof}
+    \begin{multline}
+        \mathcal{L}\cbrak{f(t-T)u(t-T)}\\=\int_{0}^{\infty}e^{-st}f(t-T)u(t-T)dt\\
+    \end{multline}
+    This can be written as
+    \begin{align}
+        &=e^{-sT}\int_{-T}^{\infty}e^{-s(t-T)}f(t-T)u(t-T)d(t-T)\\
+        &=e^{-sT}\int_{0}^{\infty}e^{-s(t-T)}f(t-T)d(t-T)\\
+        &=e^{-sT}F(s)
+    \end{align}
+
+\end{proof}
+
+Using~\eqref{ec/1999/1/3/lemma:timeShift}, the correct answer is \textbf{Option(2)}

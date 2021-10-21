@@ -6,6 +6,16 @@
 \numberwithin{table}{enumi}
 \numberwithin{lemma}{enumi}
 
+\item The trigonometric Fourier series of a periodic time function can have only:
+\begin{enumerate}[label=(\Alph*)]
+\item cosine terms 
+\item sine terms
+\item d.c. ,cosine and sine terms
+\item d.c. and cosine terms 
+\end{enumerate}
+\solution
+\input{solutions/ec/1998/1/4/Gate_Assignment_4.tex}
+
 \item The Fourier representation of an impulse train represented by $s(t) = \sum_{n=-\infty}^{\infty}\delta(t-nT_0)$ is given by
 \begin{enumerate}[label=(\alph*)]
 \setlength\itemsep{0.5em}
@@ -55,6 +65,74 @@
 \end{enumerate}
 \solution
 \input{solutions/ec/2005/6/latex_code.tex}
+\item 
+A non-zero sequence $x(n)$ is given by:
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_1.png}
+    \caption{$x(n)$}
+    \label{ec/2005/85/x(n)}
+\end{figure}
+The sequence
+\begin{align}
+y(n)=  
+\begin{cases}
+x\Bigg(\dfrac{n}{2}-1\Bigg), & \text{for } n \text{ even}\\
+0, & \text{for } n \text{ odd}\nonumber
+\end{cases}
+\end{align}
+is given by:
+\begin{enumerate}
+\item 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\columnwidth] {solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_2.png}
+    \caption{Option (a)}
+    \label{ec/2005/85/Option (a)}
+\end{figure}
+\item 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\columnwidth] {solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_3.png}
+    \caption{Option (b)}
+    \label{ec/2005/85/Option (b)}
+\end{figure}
+\item 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\columnwidth] {solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_4.png}
+    \caption{Option (c)}
+    \label{ec/2005/85/Option (c)}
+\end{figure}
+\item 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\columnwidth] {solutions/ec/2005/85/Figures/Gate_Assignment_3_Fig_5.png}
+    \caption{Option (d)}
+    \label{ec/2005/85/Option (d)}
+\end{figure}
+\end{enumerate}
+\item If $\sbrak{f(t)}=F(s)$, then $\sbrak{f(t-T)}$ is equal to
+\begin{enumerate}
+    \item $e^{sT}F(s)$
+    \item $e^{-sT}F(s)$
+    \item $\dfrac{F(s)}{1+e^{sT}}$
+    \item $\dfrac{F(s)}{1+e^{-sT}}$
+\end{enumerate}
+\solution
+\input{solutions/ec/1999/1/3/main.tex}
+\item A linear system is equivalently represented by two sets of state equations:
+$$\vec{\dot X}=\vec{A}\vec{X}+\vec{B}\vec{U} \text{ and } \vec{\dot W}=\vec{C}\vec{W}+\vec{D}\vec{U}$$
+Eigenvalues of the representations are also computed as $[\lambda]$ and $[\mu]$. Which of the following is true?
+\begin{enumerate}
+    \item $[\lambda]=[\mu]$ and $\vec{X}=\vec{W}$
+    \item $[\lambda]=[\mu]$ and $\vec{X}\neq \vec{W}$
+    \item $[\lambda]\neq [\mu]$ and $\vec{X}=\vec{W}$
+    \item $[\lambda]\neq[\mu]$ and $\vec{X}\neq \vec{W}$
+\end{enumerate}
+\solution
+%\input{solutions/ec/2005/25/GateAssignment3.tex}
+
 \item The dirac-delta function $\delta(t)$ is defines as 
 \begin{enumerate}
     \item $\delta(t)=  \begin{cases}

@@ -1,0 +1,104 @@
+
+The trigonometric Fourier series of a periodic function $x(t)$ with period $T$ is given by:
+\begin{align}
+x(t) &= a_{0} + \sum_{k=1}^{\infty}a_{k}\cos{\frac{2\pi kt}{T}} +\sum_{k=1}^{\infty}b_{k}\sin{\frac{2\pi kt}{T}}
+\end{align}
+where $a_{0}$ is the d.c component of the signal and $a_{k}$ and $b_{k}$ are Fourier coefficients. The Fourier series of some example functions are given by:
+\begin{enumerate}
+\item We have a even periodic function having period $2\pi$ defined in $[-\pi,\pi]$ as follows :
+\begin{align}
+x(t)=  
+\begin{cases}
+\frac{\pi}{2}+t, & \text{if } -\pi \leq t \leq 0\\
+\frac{\pi}{2}-t, & \text{if } 0 < t \leq \pi \nonumber
+\end{cases}
+\end{align}
+The Fourier series of $x(t)$ is determined as follows:
+\begin{align}
+a_{0} &=\frac{1}{2\pi}\Bigg({\int_{-\pi}^{0}x(t)\, dt}+{\int_{0}^{\pi}x(t)\, dt}\Bigg)=0 \nonumber \\
+a_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\cos{kt}\, dt}+{\int_{0}^{\pi}x(t)\cos{kt}\, dt}\Bigg) \nonumber \\
+&= \frac{2(1-(-1)^{k})}{\pi k^{2}}\nonumber \\
+b_{k} &= \frac{1}{\pi}{\int_{-\pi}^{\pi}x(t)\sin{kt}\, dt} = 0\nonumber
+\end{align}
+\begin{align}
+x(t) &= \frac{4}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}
+\end{align}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_1.png}
+    \caption{$x(t)$ vs $t$}
+    \label{ec/1998/1/4/Fourier series of x(t)1}
+\end{figure}
+\item We have a odd periodic function having period $2\pi$ defined in $[0,2\pi]$ as follows :
+\begin{align}
+x(t)=  
+\begin{cases}
+1, & \text{if } 0 < t < \pi\\
+0, & \text{if } t = 0,\pi,2\pi\\
+-1, & \text{if } \pi < t < 2\pi \nonumber
+\end{cases}
+\end{align}
+The Fourier series of $x(t)$ is determined as follows:
+\begin{align}
+a_{0} &=\frac{1}{2\pi}{\int_{-\pi}^{\pi}x(t)\, dt}=0 \nonumber \\
+a_{k} &= \frac{1}{\pi}{\int_{-\pi}^{\pi}x(t)\cos{kt}\, dt} = 0\nonumber \\
+b_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\sin{kt}\, dt}+{\int_{0}^{\pi}x(t)\sin{kt}\, dt}\Bigg) \nonumber \\
+&= \frac{2(1-(-1)^{k})}{\pi k}\nonumber \\
+x(t) &= \frac{4}{\pi}\sum_{k=1}^{\infty}\frac{\sin{(2k-1)t}}{2k-1}
+\end{align}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_2.png}
+    \caption{$x(t)$ vs $t$}
+    \label{ec/1998/1/4/Fourier series of x(t)2}
+\end{figure}
+\item We have a neither even nor odd periodic function having period $2\pi$ defined in $(-\pi,\pi)$ as follows :
+\begin{align}
+x(t)=  
+\begin{cases}
+-\pi, & \text{if } -\pi < t < 0\\
+-\frac{\pi}{2}, & \text{if } t=0\\
+t, & \text{if } 0 < t < \pi \nonumber
+\end{cases}
+\end{align}
+The Fourier series of $x(t)$ is determined as follows:
+\begin{align}
+a_{0} &=\frac{1}{2\pi}\Bigg({\int_{-\pi}^{0}x(t)\, dt}+{\int_{0}^{\pi}x(t)\, dt}\Bigg)= -\frac{\pi}{4} \nonumber \\
+a_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\cos{kt}\, dt}+{\int_{0}^{\pi}x(t)\cos{kt}\, dt}\Bigg) \nonumber \\
+&= \frac{(-1)^{k}-1}{\pi k^{2}}\nonumber
+\end{align}
+\begin{align}
+b_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\sin{kt}\, dt}+{\int_{0}^{\pi}x(t)\sin{kt}\, dt}\Bigg) \nonumber \\
+&= \frac{2(-1)^{k}+1}{k}\nonumber \\
+x(t) &= -\frac{\pi}{4}-\frac{2}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}+\sum_{k=1}^{\infty}b_{k}\sin{kt}
+\end{align}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_3.png}
+    \caption{$x(t)$ vs $t$}
+    \label{ec/1998/1/4/Fourier series of x(t)3}
+\end{figure}
+\item We have a even periodic function having period $2\pi$ defined in $(0,2\pi)$ as follows :
+\begin{align}
+x(t)=  
+\begin{cases}
+t, & \text{if } 0 < t \leq \pi\\
+2\pi-t, & \text{if } \pi \leq  t <  2\pi \nonumber
+\end{cases}
+\end{align}
+The Fourier series of $x(t)$ is determined as follows:
+\begin{align}
+a_{0} &=\frac{1}{2\pi}\Bigg({\int_{-\pi}^{0}x(t)\, dt}+{\int_{0}^{\pi}x(t)\, dt}\Bigg)= \frac{\pi}{2} \nonumber \\
+a_{k} &= \frac{1}{\pi}\Bigg({\int_{-\pi}^{0}x(t)\cos{kt}\, dt}+{\int_{0}^{\pi}x(t)\cos{kt}\, dt}\Bigg) \nonumber \\
+&= \frac{2((-1)^{k}-1)}{\pi k^{2}}\nonumber \\
+b_{k} &= \frac{1}{\pi}{\int_{-\pi}^{\pi}x(t)\sin{kt}\, dt} = 0\nonumber \\
+x(t) &= \frac{\pi}{2}-\frac{4}{\pi}\sum_{k=1}^{\infty}\frac{\cos{(2k-1)t}}{(2k-1)^{2}}
+\end{align}
+\end{enumerate}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth] {solutions/ec/1998/1/4/Figures/Gate_Assignment_4_Fig_4.png}
+    \caption{$x(t)$ vs $t$}
+    \label{ec/1998/1/4/Fourier series of x(t)}
+\end{figure}
+Hence the correct answer is option (C).
